@@ -1,5 +1,5 @@
 async function GetAudio(){
-    let text = document.querySelector("#text").value;
+    let text = document.querySelector("#text").value.replace(/\n\s*\n/g, " ");
     if(text){
         document.querySelector("#speakbtn").innerHTML="Please wait...";
         const options = {
